@@ -1,0 +1,27 @@
+.wrap-product {
+   display: inline-block;
+   width: 454px;
+   vertical-align: middle;
+   position: relative;
+}
+
+.wrap-product > .buttons {
+   position: absolute;
+   margin-top: 98px;
+   width: 100vw;
+}
+
+@media (max-width: 1310px) {
+   .wrap-product {
+      width: 100%;
+      display: block;
+   }
+
+   .wrap-product > .buttons {
+      position: static;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      transform: none;
+   }
+}

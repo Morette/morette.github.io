@@ -1,0 +1,145 @@
+.description-product {
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+}
+
+.description-product > .title {
+   font-size: 25px;
+   margin-bottom: 50px;
+}
+
+.description-product > .item {
+   font-size: 20px;
+   margin-bottom: 28px;
+}
+
+/* ícon de coração */
+
+.description-product > .item.-heart {
+   position: absolute;
+   transform: translateX(-100%);
+   left: -47px;
+   top: 8px;
+   cursor: pointer;
+}
+
+.description-product .icon:hover {
+   transform: scale(1.2);
+   transition: transform 200ms linear;
+}
+
+/* intercalando entre coração ativo e inativo */
+
+.description-product .icon.-active {
+   display: none;
+}
+
+.description-product > .item.-active .icon {
+   display: none;
+}
+
+.description-product > .item.-active .icon.-active {
+   display: block;
+}
+
+/* ================ */
+
+/* ícone de estrela */
+
+.description-product > .item.-star {
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.description-product .star {
+   display: inline-block;
+}
+
+.description-product > .item + .item {
+   margin-left: 7px;
+}
+
+/* intercalando entre estrelas ativas e inativas */
+
+.description-product .star.-active > .icon {
+   display: none;
+}
+
+.description-product .star.-active > .-active {
+   display: block;
+}
+
+/* ================ */
+
+.description-product > .item.-info {
+   width: 200px;
+   text-align: right;
+}
+
+.description-product > .item.-last {
+   margin-bottom: 72px;
+}
+
+.description-product .contrast {
+   text-transform: uppercase;
+   float: left;
+}
+
+.description-product > .text {
+   font-size: 18px;
+   line-height: 30px;
+}
+
+.description-product .action {
+   color: inherit;
+   text-decoration: none;
+}
+
+.description-product > .text.-more {
+   margin-top: 30px;
+}
+
+@media (max-width: 1310px) {
+   .description-product > .title {
+      font-size: 35px;
+      text-align: center;
+   }
+
+   .description-product {
+      margin: 0 auto 60px;
+      width: 50%;
+      min-width: 655px;
+      text-align: justify;
+   }
+
+   .description-product > .item.-star {
+      float: left;
+      margin-right: 15px;
+   }
+
+   .description-product > .item.-number {
+      padding-top: 4px;
+   }
+
+   .description-product > .item.-heart {
+      left: auto;
+      transform: none;
+   }
+}
+
+@media (max-width: 720px) {
+   .description-product {
+      width: 90%;
+      min-width: auto;
+   }
+}
+
+@media (max-width: 475px) {
+   .description-product > .item.-heart {
+      position: static;
+   }
+
+   .description-product > .title {
+      margin-bottom: 15px;
+   }
+}

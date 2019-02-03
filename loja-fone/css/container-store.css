@@ -1,0 +1,36 @@
+.container-store {
+   box-sizing: border-box;
+   position: absolute;
+   padding: 60px 50px 165px 0;
+   width: 90%;
+   max-width: 1360px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #e24647;
+   box-shadow: 0 0 39px 0 rgba(50, 50, 50, 0.4);
+}
+
+@media (max-width: 1460px), (max-height: 970px)  {
+   .container-store {
+      position: static;
+      transform: none;
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 1310px) {
+   .container-store {
+      padding-right: 0;
+      padding-bottom: 50px;
+   }
+}
+
+@media (max-width: 952px) {
+   .container-store {
+      max-width: 1330px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
